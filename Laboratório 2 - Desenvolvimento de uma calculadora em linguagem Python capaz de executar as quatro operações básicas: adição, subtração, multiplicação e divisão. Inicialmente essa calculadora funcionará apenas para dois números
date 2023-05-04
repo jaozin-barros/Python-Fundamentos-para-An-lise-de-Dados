@@ -1,0 +1,35 @@
+#Definição das funções das operações
+
+def adicao(num1, num2):
+  return num1+num2
+
+def subtracao(num1, num2):
+  return num1-num2
+
+def multiplicacao(num1, num2):
+  return num1*num2
+
+def divisao(num1, num2):
+  return num1/num2
+  
+  
+#Escolha da operação e digitação dos números a serem utilizados na operação escolhida
+
+print('Selecione a operação desejada: \n1-Soma \n2-Subtração \n3-Multiplicação \n4-Divisão')
+operacao = int(input('Digite sua opção (1/2/3/4): \n'))
+num1 = float(input('Digite o primeiro número: '))
+num2 = float(input('Digite o segundo número: '))
+
+#Cálculo baseado na operação desejada
+
+if operacao == 1:
+  print('{} + {} = {}'.format(num1, num2, adicao(num1,num2)))
+elif operacao == 2:
+  print('{} + {} = {}'.format(num1, num2, subtracao(num1,num2)))
+elif operacao == 3:
+  print('{} + {} = {}'.format(num1, num2, multiplicacao(num1,num2)))
+elif operacao == 4:
+  if num2 !=0:
+    print('{} + {} = {}'.format(num1, num2, divisao(num1,num2)))
+  else:
+    print('Não foi possível realizar a operação')
